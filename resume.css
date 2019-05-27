@@ -1,0 +1,169 @@
+
+* {box-sizing: border-box}
+.button{
+  background-color: #fff4c1;
+  border-radius:8px;
+  padding:10px 25px;
+  font-size:20px;
+  text-align:center;
+  border:2px solid #ffed97;
+  font-weight:bold;
+}
+.button:hover{
+  opacity:0.5;
+}
+#skills{
+	border-radius: 10px;
+  border:4px solid 	#ffed97;	
+  width:50%;
+  background-color: #ffffff;
+  margin-left:0px;
+  padding:2px;
+}
+.skills {
+
+  text-align: right;
+  color: white;
+}
+@keyframes skill70 {
+      0% {width: 0%}
+      100% {width: 70%}
+    }
+@keyframes skill50 {
+      0% {width: 0%}
+      100% {width: 50%}
+    }
+@keyframes skill60 {
+      0% {width: 0%}
+      100% {width: 60%}
+    }
+
+.html {
+ animation-name: skill70 ;
+ animation-duration:3s; 
+ width: 70%; background-color: #fff4c1;
+}
+.css {
+  animation-name: skill70 ;
+  animation-duration:3s; 
+  width: 70%; background-color: #fff4c1;
+}
+.js {
+  animation-name: skill50 ;
+  animation-duration:3s; 
+  width: 50%; background-color: 	#fff4c1;}
+.jave {
+  animation-name: skill60 ;
+  animation-duration:3s; 
+  width: 60%; background-color: #fff4c1;}
+
+/*圖片 */
+.flip-box {
+  background-color: transparent;
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+  padding:10px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.image{
+	display: block;
+  width: 300px;
+  border-radius: 50%;
+  border:8px solid #fff4c1;
+}
+.flip-box-front {
+  
+  color: black;
+}
+
+.flip-box-back {
+ 
+  color: white;
+  transform: rotateY(180deg);
+}
+
+#container { 
+  background-color: #fffff4;	
+  height: 100%;
+  position: relative;
+  border: 5px solid #fff4c1; 
+}
+
+#vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/*標題 */
+.span{ 
+	position: absolute;
+	top: 35px;
+	left:420px;
+    
+}
+/*工作經驗 */
+.job{
+  position: absolute;
+  top: 480px;
+  left: 650px;
+}
+
+/*課程專案*/
+#class{
+  background-color:#fff4c1;
+  border-radius: 10px;
+  font-weight:bold;
+}
+/*社團*/
+#club{
+  border:3px solid #ffe4ca;
+  background-color:  #fff8d7;
+  border-radius:5px;
+  padding:16px;
+  margin:16px 0;
+}
+#club::after{
+  content:"";
+  clear:both;
+  display:table;
+}
+#club img{
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+#club span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+@media (max-width: 500px) {
+  #club {
+      text-align: center;
+  }
+  #club img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
